@@ -1,0 +1,23 @@
+# Devenv
+.devenv*
+devenv.local.nix
+devenv.local.yaml
+
+# direnv
+.direnv
+
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+.ipynb_checkpoints/
+
+# Recording output: image series, manifests and saved camera settings.
+# These may show people or the lab, so they must never be committed.
+# Deliberate example assets can be re-included with a "!path" rule.
+*.tif
+*.tiff
+*.csv
+*.xml
