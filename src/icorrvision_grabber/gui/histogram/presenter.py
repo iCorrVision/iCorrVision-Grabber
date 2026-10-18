@@ -2,7 +2,7 @@ from PySide6.QtGui import QImage, QPixmap, QColor, QPainter
 from PySide6.QtCore import QObject, QTimer, Signal, Slot, QThread, Qt
 import numpy as np
 import cv2 as cv
-from UI.utils.theme import THEME
+from icorrvision_grabber.gui.widgets.utils.theme import THEME
 
 
 class HistogramModel:

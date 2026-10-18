@@ -4,8 +4,8 @@ from PySide6.QtWidgets import (
     QTabWidget,
 )
 
-from UI.console_view import ConsoleLogView
-from UI.histogram_view import HistogramView
+from icorrvision_grabber.gui.widgets.console_view import ConsoleLogView
+from icorrvision_grabber.gui.histogram.view import HistogramView
 
 
 class BottomPanelView(QWidget):

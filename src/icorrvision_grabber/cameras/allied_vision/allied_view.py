@@ -9,7 +9,10 @@ from PySide6.QtWidgets import (
     QCheckBox,
 )
 
-from UI.utils.view_utils import ask_load_file, ask_export_folder
+from icorrvision_grabber.gui.widgets.utils.view_utils import (
+    ask_load_file,
+    ask_export_folder,
+)
 
 
 class AlliedOptionsView(QWidget):

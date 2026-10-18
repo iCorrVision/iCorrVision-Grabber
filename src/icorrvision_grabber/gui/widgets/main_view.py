@@ -5,13 +5,13 @@ from PySide6.QtWidgets import (
     QSplitter,
     QSizePolicy,
 )
-from UI.camera_view import CameraView
-from UI.mode_panel_view import ModePanelView
-from UI.bottom_panel_view import BottomPanelView
-from UI.control_bar_view import AcquisitionSideBar
+from icorrvision_grabber.gui.acquisition.camera_view import CameraView
+from icorrvision_grabber.gui.widgets.mode_panel_view import ModePanelView
+from icorrvision_grabber.gui.widgets.bottom_panel_view import BottomPanelView
+from icorrvision_grabber.gui.acquisition.control_bar_view import AcquisitionSideBar
 
-from UI.draw_panel_view import DrawView
-from UI.general_view import GeneralView
+from icorrvision_grabber.gui.acquisition.draw_panel_view import DrawView
+from icorrvision_grabber.gui.acquisition.general_view import GeneralView
 
 
 class MainView(QMainWindow):

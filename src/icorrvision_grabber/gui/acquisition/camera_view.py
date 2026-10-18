@@ -10,7 +10,7 @@ from PySide6.QtWidgets import (
 )
 from PySide6.QtCore import Signal, Qt
 
-from UI.camera_frame import CameraFrame
+from icorrvision_grabber.gui.widgets.camera_frame import CameraFrame
 
 
 class CameraView(QWidget):

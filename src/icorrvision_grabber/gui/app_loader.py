@@ -4,18 +4,20 @@ from PySide6.QtWidgets import QApplication, QSplashScreen, QWidget
 from PySide6.QtCore import Qt, QTimer
 from PySide6.QtGui import QPixmap, QColor
 
-from UI.main_view import MainView
-from components.cameras.opencv.opencv_acquisition_extension import (
+from icorrvision_grabber.gui.widgets.main_view import MainView
+from icorrvision_grabber.cameras.opencv.opencv_acquisition_extension import (
     OpencvAquisitionExtension,
 )
-from components.cameras.opencv.opencv_view import OpencvView
-from components.cameras.template.acquisition_extender import AcquisitionExtension
-from core.main_presenter import MainPresenter
+from icorrvision_grabber.cameras.opencv.opencv_view import OpencvView
+from icorrvision_grabber.cameras.template.acquisition_extender import (
+    AcquisitionExtension,
+)
+from icorrvision_grabber.gui.main_presenter import MainPresenter
 
-import components.cameras.allied_vision.vimba_runtime as vimba_runtime
+import icorrvision_grabber.cameras.allied_vision.vimba_runtime as vimba_runtime
 
 
-from UI.utils.theme import THEME
+from icorrvision_grabber.gui.widgets.utils.theme import THEME
 
 
 class AppLoader:
@@ -52,8 +54,10 @@ class AppLoader:
         self._app.aboutToQuit.connect(self._shutdown)
 
         if vimba_runtime.VIMBA_AVAILABLE:
-            from components.cameras.allied_vision.allied_view import AlliedOptionsView
-            from components.cameras.allied_vision.vimba_acquisition_extension import (
+            from icorrvision_grabber.cameras.allied_vision.allied_view import (
+                AlliedOptionsView,
+            )
+            from icorrvision_grabber.cameras.allied_vision.vimba_acquisition_extension import (
                 VimbaAcquisitionExtension,
             )
 

@@ -1,13 +1,20 @@
 import os
 import logging
 from typing import override
-from components.cameras.allied_vision.allied_view import AlliedOptionsView
+from icorrvision_grabber.cameras.allied_vision.allied_view import AlliedOptionsView
 from PySide6.QtCore import Slot
 
-from components.cameras.allied_vision.vimba_runtime import get_vmb
-from components.enumeration_model import CameraBackendType, CameraDescriptor
-from components.cameras.template.acquisition_extender import AcquisitionExtension
-from components.cameras.allied_vision.vimba_camera_presenter import VimbaCameraPresenter
+from icorrvision_grabber.cameras.allied_vision.vimba_runtime import get_vmb
+from icorrvision_grabber.cameras.enumeration_model import (
+    CameraBackendType,
+    CameraDescriptor,
+)
+from icorrvision_grabber.cameras.template.acquisition_extender import (
+    AcquisitionExtension,
+)
+from icorrvision_grabber.cameras.allied_vision.vimba_camera_presenter import (
+    VimbaCameraPresenter,
+)
 
 CameraBackendType.register("VIMBA")
 

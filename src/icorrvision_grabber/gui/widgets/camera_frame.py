@@ -11,7 +11,7 @@ from PySide6.QtWidgets import (
 from PySide6.QtCore import Signal
 from PySide6.QtGui import QPixmap
 
-from UI.frame_display import FrameDisplay
+from icorrvision_grabber.gui.widgets.frame_display import FrameDisplay
 
 
 class CameraFrame(QFrame):

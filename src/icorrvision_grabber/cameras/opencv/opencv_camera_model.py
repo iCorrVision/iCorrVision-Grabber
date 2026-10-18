@@ -4,9 +4,9 @@ import numpy as np
 
 import logging
 
-from components.cameras.template.camera_model import CameraModel
+from icorrvision_grabber.cameras.template.camera_model import CameraModel
 
-from components.cameras.camera_exceptions import CameraFatalError
+from icorrvision_grabber.cameras.camera_exceptions import CameraFatalError
 
 
 class OpencvCameraModel(CameraModel):

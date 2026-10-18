@@ -15,9 +15,9 @@ from PySide6.QtCore import (
 )
 from PySide6.QtGui import QImage, QPixmap
 
-from components.enumeration_model import CameraDescriptor
-from components.cameras.template.camera_model import CameraModel
-from UI.camera_frame import CameraFrame
+from icorrvision_grabber.cameras.enumeration_model import CameraDescriptor
+from icorrvision_grabber.cameras.template.camera_model import CameraModel
+from icorrvision_grabber.gui.widgets.camera_frame import CameraFrame
 
 
 class FrameWriterWorker(QThread):
