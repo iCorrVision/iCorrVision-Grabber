@@ -6,17 +6,19 @@ import os
 from PySide6.QtGui import QImage
 from PySide6.QtCore import Slot
 
-from components.cameras.template.camera_presenter import (
+from icorrvision_grabber.cameras.template.camera_presenter import (
     CameraPresenter,
     FrameWorker,
 )
 
-from components.cameras.allied_vision.vimba_camera_model import VimbaCameraModel
-from components.enumeration_model import CameraDescriptor
+from icorrvision_grabber.cameras.allied_vision.vimba_camera_model import (
+    VimbaCameraModel,
+)
+from icorrvision_grabber.cameras.enumeration_model import CameraDescriptor
 
-from UI.camera_frame import CameraFrame
+from icorrvision_grabber.gui.widgets.camera_frame import CameraFrame
 
-from components.cameras.camera_exceptions import CameraFatalError
+from icorrvision_grabber.cameras.camera_exceptions import CameraFatalError
 
 
 class VimbaFrameWorker(FrameWorker):

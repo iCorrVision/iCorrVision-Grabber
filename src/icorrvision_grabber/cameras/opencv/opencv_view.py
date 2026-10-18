@@ -6,7 +6,7 @@ from PySide6.QtWidgets import (
     QWidget,
     QVBoxLayout,
 )
-from UI.utils.view_utils import make_labeled_toggle
+from icorrvision_grabber.gui.widgets.utils.view_utils import make_labeled_toggle
 
 
 class OpencvView(QWidget):

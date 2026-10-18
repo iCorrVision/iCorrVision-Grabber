@@ -2,12 +2,14 @@ import logging
 import numpy as np
 from PySide6.QtWidgets import QWidget
 
-from components.acquisition_presenter import AcquisitionPresenter
-from components.cameras.template.acquisition_extender import AcquisitionExtension
-from components.console_presenter import ConsolePresenter
-from components.histogram_presenter import HistogramPresenter
+from icorrvision_grabber.gui.acquisition.presenter import AcquisitionPresenter
+from icorrvision_grabber.cameras.template.acquisition_extender import (
+    AcquisitionExtension,
+)
+from icorrvision_grabber.gui.console_presenter import ConsolePresenter
+from icorrvision_grabber.gui.histogram.presenter import HistogramPresenter
 
-from components.histogram_presenter import HistogramModel
+from icorrvision_grabber.gui.histogram.presenter import HistogramModel
 
 
 class MainPresenter:

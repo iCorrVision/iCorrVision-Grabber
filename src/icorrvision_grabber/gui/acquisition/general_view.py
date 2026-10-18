@@ -7,7 +7,7 @@ from PySide6.QtWidgets import (
     QLineEdit,
     QSlider,
 )
-from UI.utils.view_utils import make_labeled_toggle
+from icorrvision_grabber.gui.widgets.utils.view_utils import make_labeled_toggle
 
 
 class GeneralView(QWidget):

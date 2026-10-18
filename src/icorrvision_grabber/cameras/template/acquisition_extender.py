@@ -1,4 +1,4 @@
-from components.enumeration_model import CameraDescriptor
+from icorrvision_grabber.cameras.enumeration_model import CameraDescriptor
 
 
 class AcquisitionExtension:

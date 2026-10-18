@@ -3,10 +3,10 @@ from vmbpy import *
 import numpy as np
 import logging
 
-from components.cameras.template.camera_model import CameraModel
+from icorrvision_grabber.cameras.template.camera_model import CameraModel
 
-from components.cameras.allied_vision.vimba_runtime import get_vmb
-from components.cameras.camera_exceptions import CameraFatalError
+from icorrvision_grabber.cameras.allied_vision.vimba_runtime import get_vmb
+from icorrvision_grabber.cameras.camera_exceptions import CameraFatalError
 
 
 class VimbaCameraModel(CameraModel):

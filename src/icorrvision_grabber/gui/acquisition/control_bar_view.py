@@ -6,7 +6,10 @@ from PySide6.QtWidgets import (
 )
 from PySide6.QtCore import Signal
 
-from UI.utils.view_utils import make_button, ask_export_folder
+from icorrvision_grabber.gui.widgets.utils.view_utils import (
+    make_button,
+    ask_export_folder,
+)
 
 
 class AcquisitionSideBar(QWidget):

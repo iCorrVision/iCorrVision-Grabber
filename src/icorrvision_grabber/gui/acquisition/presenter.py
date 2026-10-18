@@ -9,21 +9,23 @@ from datetime import datetime
 
 from PySide6.QtCore import QObject, Signal, Slot
 
-from components.cameras.template.acquisition_extender import AcquisitionExtension
-from components.enumeration_model import (
+from icorrvision_grabber.cameras.template.acquisition_extender import (
+    AcquisitionExtension,
+)
+from icorrvision_grabber.cameras.enumeration_model import (
     CameraBackendType,
     EnumerationModel,
     CameraRegistry,
     CameraDescriptor,
 )
 
-from UI.camera_view import CameraView
-from UI.camera_frame import CameraFrame
-from UI.control_bar_view import AcquisitionSideBar
-from UI.general_view import GeneralView
-from UI.draw_panel_view import DrawView
+from icorrvision_grabber.gui.acquisition.camera_view import CameraView
+from icorrvision_grabber.gui.widgets.camera_frame import CameraFrame
+from icorrvision_grabber.gui.acquisition.control_bar_view import AcquisitionSideBar
+from icorrvision_grabber.gui.acquisition.general_view import GeneralView
+from icorrvision_grabber.gui.acquisition.draw_panel_view import DrawView
 
-from components.cameras.template.camera_presenter import CameraPresenter
+from icorrvision_grabber.cameras.template.camera_presenter import CameraPresenter
 
 
 @dataclass

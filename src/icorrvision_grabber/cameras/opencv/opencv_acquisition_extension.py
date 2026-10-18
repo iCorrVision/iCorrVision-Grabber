@@ -4,10 +4,17 @@ import logging
 from PySide6.QtCore import Slot, QTimer
 import cv2 as cv
 
-from components.enumeration_model import CameraBackendType, CameraDescriptor
-from components.cameras.template.acquisition_extender import AcquisitionExtension
-from components.cameras.opencv.opencv_camera_presenter import OpencvCameraPresenter
-from components.cameras.opencv.opencv_view import OpencvView
+from icorrvision_grabber.cameras.enumeration_model import (
+    CameraBackendType,
+    CameraDescriptor,
+)
+from icorrvision_grabber.cameras.template.acquisition_extender import (
+    AcquisitionExtension,
+)
+from icorrvision_grabber.cameras.opencv.opencv_camera_presenter import (
+    OpencvCameraPresenter,
+)
+from icorrvision_grabber.cameras.opencv.opencv_view import OpencvView
 
 CameraBackendType.register("OPENCV")
 
