@@ -49,7 +49,10 @@
 
     venv = {
       enable = true;
-      requirements = ./requirements.txt;
+      # The project with its notebook and dev extras, installed in editable mode so that
+      # `import icorrvision_grabber` runs the code in src/; pyproject.toml lists the
+      # dependencies. devenv runs pip from the project root.
+      requirements = "-e .[notebooks,dev]\n";
     };
   };
 
@@ -92,7 +95,7 @@
       xorg.xcbutilcursor
     ])}"
     export QT_PLUGIN_PATH="$PYSIDE6_DIR/Qt/plugins"
-    python3 -m core.main
+    python3 -m icorrvision_grabber.gui.main
   '';
 
   enterShell = ''
