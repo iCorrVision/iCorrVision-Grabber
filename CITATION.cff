@@ -9,6 +9,9 @@ repository-code: "https://github.com/iCorrVision/iCorrVision-Grabber"
 authors:
   - family-names: "Récio"
     given-names: "João Pedro da Silva Duarte"
+  - family-names: "Xavier"
+    given-names: "José Manuel Cardoso"
+    orcid: "https://orcid.org/0000-0002-7836-4598"
 preferred-citation:
   type: thesis
   thesis-type: "MSc thesis"
