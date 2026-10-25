@@ -122,6 +122,14 @@ NumPy 2.4.4, VmbPy 1.2.1 and Vimba X 2026-1 on Ubuntu 24.04 for the Allied Visio
 simulated cameras (Section 5.3.5 of the thesis). `pyproject.toml` gives lower bounds only
 (except PySide6, pinned to 6.10.2), so a new installation may use newer versions.
 
+## Contributing
+
+Contributions are welcome. Please read the organization's
+[contributing guide](https://github.com/iCorrVision/.github/blob/main/CONTRIBUTING.md) and
+[Code of Conduct](https://github.com/iCorrVision/.github/blob/main/CODE_OF_CONDUCT.md), and report
+security problems privately as described in the
+[Security Policy](https://github.com/iCorrVision/.github/blob/main/SECURITY.md).
+
 ## Citation
 
 See `CITATION.cff`, or use GitHub's "Cite this repository" button.
