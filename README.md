@@ -27,16 +27,20 @@ the version the thesis cites.
 
 ## Install and run
 
-Python 3.12 or newer. Use a virtual environment of its own: the Grabber and iCorrVision 2D both
-have top-level packages named `core`, `UI` and `components`, so they must not be installed into
-the same environment.
+Python 3.12 or newer. Use a virtual environment of its own: the Grabber depends on `opencv-python`
+and iCorrVision 2D on `opencv-python-headless`, and the two OpenCV packages must not be installed
+in the same environment.
 
 ```sh
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
-python -m core.main
+pip install .
+python -m icorrvision_grabber.gui.main
 ```
+
+Optional extras: `allied` (VmbPy, for Allied Vision cameras; see [Cameras](#cameras)) and
+`notebooks` (for the notebook in `benchmarks/`). For development, use
+`pip install -e ".[notebooks,dev]"`.
 
 On NixOS, `devenv shell` provides the environment, and the `grabber` command starts the application
 with the Qt libraries it needs.
@@ -107,7 +111,7 @@ The thesis lists them in Section 4.5 and Table 4.3; they are to be corrected in 
 between frames and, for two cameras, the pairing offset. It keeps the outputs of the thesis runs
 and ends with a guide to reading them. The recordings and the runs table are not distributed,
 since `.gitignore` excludes image series and CSV files. To check new recordings, install the
-notebook dependencies from `requirements.txt`, list the recordings in `acquisition_runs.csv` (the
+notebook dependencies (`pip install ".[notebooks]"`), list the recordings in `acquisition_runs.csv` (the
 first cell describes its columns) and run the notebook from the `benchmarks/` folder.
 
 ## Tested with
@@ -115,8 +119,8 @@ first cell describes its columns) and run the notebook from the `benchmarks/` fo
 The acquisition test of the thesis used Python 3.12.13, PySide6 6.10.2, OpenCV 5.0.0 and NumPy
 2.5.3 on NixOS (Linux) for the OpenCV backend, and Python 3.12.3, PySide6 6.10.2, OpenCV 4.13.0,
 NumPy 2.4.4, VmbPy 1.2.1 and Vimba X 2026-1 on Ubuntu 24.04 for the Allied Vision backend, with
-simulated cameras (Section 5.3.5 of the thesis). `requirements.txt` gives lower bounds only
-(except PySide6), so a new installation may use newer versions.
+simulated cameras (Section 5.3.5 of the thesis). `pyproject.toml` gives lower bounds only
+(except PySide6, pinned to 6.10.2), so a new installation may use newer versions.
 
 ## Citation
 
